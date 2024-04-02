@@ -10,9 +10,12 @@ void exercise_1(string s1) {
 for(int n=1;n<s1.size();n++)
 {
 
+for(int n=1;n<s1.size();n++)
+{
 
 
-if(s1[n]!=' ')
+
+if(s1[n]==' ')
 {
 cout<<n<<endl;
 
@@ -21,7 +24,8 @@ cout<<n<<endl;
 
 }
 cout<<s1.size()<<endl;
-  
+  	
+	
 }
 
 void exercise_2(string s1) {
