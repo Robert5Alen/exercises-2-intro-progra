@@ -26,7 +26,33 @@ cout<<s1.size()<<endl;
 }
 
 void exercise_2(string s1) {
-  // TODO: YOUR CODE HERE
+  
+
+cout<<"[";
+for(int n=0;n<s1.size();n++)
+{
+	
+	if(s1[n]!=' ')
+	{
+		
+		cout<<s1[n];
+	}
+	
+	else{
+		
+		cout<<"]"<<endl<<"[";
+	}
+	
+		
+}
+cout<<"]";
+
+
+
+
+
+
+
 }
 
 void exercise_3(string s1) {
