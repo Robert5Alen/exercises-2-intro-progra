@@ -309,16 +309,36 @@ void exercise_9(string s) {
 }
 
 int exercise_10(int a, int b) {
-  // TODO: YOUR CODE HERE
-  return 0;
+  int mult=1;
+	for (int cont=1;a>=cont||b>=cont;cont++)
+	{
+		if (a%cont==0&&b%cont==0)
+		{
+			
+			mult=cont;
+			
+		}
+	}
+  return mult;
 }
 
 void exercise_11() {
-  // TODO: YOUR CODE HERE
+  long double x=1;
+  long double res;
+
+  cout<<"U0 = 1\n";
+  for(long double n =1;n<=10;n++)
+  {
+x=n*x;
+
+res=1/x;
+cout<<"U"<<n<<" = "<<res<<endl;
+
+  }
 }
 
 void exercise_12() {
-  // TODO: YOUR CODE HERE
+  
 }
 
 long exercise_13(int n, int k) {
