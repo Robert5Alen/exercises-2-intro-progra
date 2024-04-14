@@ -188,8 +188,8 @@ int exercise_6(int n) {
 	}
 	
 
-	cout<<sum<<endl;
-  return 0;
+	
+  return sum;
 }
 
 void exercise_7(int n) {
