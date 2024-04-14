@@ -129,49 +129,66 @@ else
 }
 
 void exercise_5(int n, int k) {
-  int resp=n;
-n=n-6;
-while(n+7>=1)
+  int resp=-n+2;
+
+
+
+while(n==n)
 {
 	
-	
-	for(int line=0;line<7 && n<=k;line++)
+	for(int line=0;line<7 ;line++)
 	{
-		if (n<10 && n<resp)
+		if (n>1 && resp<=0)
 		{
 			
 			cout<<"   ";
 		}
 		
 		
-	    else if(n<10 && n>=resp)
+	    else if(resp>=1 && resp<10)
 		{
-			cout<<" "<<n<<" ";
+			cout<<" "<<resp<<" ";
 		}
 		else
 		{
-		cout<<n<<" ";	
+		cout<<resp<<" ";	
 		}
-		n++;
-	
 		
+	
+		n--;
+	resp++;
+	
+	if(resp>k)
+{
+	break;
+}	
 		
 	}
 	
 	cout<<"\n";
 	
-if(n>k)
+if(resp>k)
 {
 	break;
 }
 }
 	
+
 	
 	
 }
 
 int exercise_6(int n) {
-  // TODO: YOUR CODE HERE
+  int sum=0;
+	while(num>0)
+	{
+		
+		sum=sum+num%10;
+		num=num/10;
+	}
+	
+
+	cout<<sum<<endl;
   return 0;
 }
 
