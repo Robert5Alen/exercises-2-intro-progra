@@ -129,7 +129,7 @@ else
 }
 
 void exercise_5(int n, int k) {
-  int resp=-n+2;
+ int resp=-n+2;
 
 
 
@@ -143,12 +143,18 @@ while(n==n)
 			
 			cout<<"   ";
 		}
-		
 		else if(line==6)
 		{
-			
-		cout<<" "<<resp;	
+			if(resp>=1 && resp<10)
+			{
+				cout<<" "<<resp;
+			}
+			else
+			{
+				cout<<resp;
+			}
 		}
+		
 	    else if(resp>=1 && resp<10)
 		{
 			cout<<" "<<resp<<" ";
@@ -176,16 +182,23 @@ if(resp>k)
 	break;
 }
 }
-	
 
-	
 	
 }
 
 int exercise_6(int n) {
  
 	
-  return 0;
+  int sum=0;
+	while(n>0)
+	{
+		
+		sum=sum+n%10;
+		n=n/10;
+	}
+	
+
+	return sum;
 }
 
 void exercise_7(int n) {
@@ -209,7 +222,66 @@ for(int cont=2;cont<=n;cont++)
 }
 
 void exercise_8(string s) {
-  // TODO: YOUR CODE HERE
+  	int cont=0;
+	char a;
+	char y;
+	string u;
+	string z;
+	int b=s.size();
+	while(s.size()>=cont)
+	{
+		if (s[b]!=' ')
+		{
+		a=s[b];
+		u=u+a;	
+			
+		}
+		
+		if (s[cont]!=' ')
+		{
+		y=s[cont];
+		z=z+y;	
+			
+		}
+		
+		cont++;
+		b--;
+		
+		
+		
+	}
+	
+	if (!u.empty() && u[0] == '\0') {
+        u.erase(0, 1);
+    }
+
+   
+    u.push_back('\0');
+	
+	for (size_t i = 0; i < u.length(); ++i) {
+        cout << static_cast<int>(u[i]) << " ";
+    }
+    cout << endl;
+
+
+    for (size_t i = 0; i < z.length(); ++i) {
+        cout << static_cast<int>(z[i]) << " ";
+    }
+    cout << endl;
+
+
+if(z==u)
+{
+	
+	cout<<"YES"<<endl;
+	
+}
+
+else{
+	
+	cout<<"NO"<<endl;
+}
+	
 }
 
 void exercise_9(string s) {
