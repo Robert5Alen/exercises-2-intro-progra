@@ -45,7 +45,7 @@ for(int n=0;n<s1.size();n++)
 	
 		
 }
-cout<<"]";
+cout<<"]\n";
 
 
 
@@ -56,11 +56,71 @@ cout<<"]";
 }
 
 void exercise_3(string s1) {
-  // TODO: YOUR CODE HERE
+  
+for(int n=0;s1.size()>n;n++)
+{
+if(s1[n]=='1')
+{
+
+cout<<"Om-nom-nom :P\n";
+
+
+}
+
+if(s1.size()>19)
+{
+	
+	cout<<"Om-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\nOm-nom-nom :P\n";
+break;
+
+}
+
+
+ if(s1[n]=='0')
+{
+
+cout<<"No cake :(\n";
+
+
+break;
+
+
+}
+}
+
 }
 
 void exercise_4(int n) {
-  // TODO: YOUR CODE HERE
+  
+	int x=1;
+	
+	if (n<0)
+{
+cout<<"El numero es negativo. Intentelo de nuevo\n";
+
+
+}
+
+else if (n>=13)
+{
+cout<<"El numero es muy grande. Intentelo de nuevo\n";
+	
+}
+
+	
+else
+{
+
+	for(long double cont=1;cont<=n;cont++)
+	{
+		
+	 x=x*cont;
+		
+	}
+	cout<<x;
+	
+	}
+  
 }
 
 void exercise_5(int n, int k) {
