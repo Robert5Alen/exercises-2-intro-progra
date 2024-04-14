@@ -257,17 +257,6 @@ void exercise_8(string s) {
 
    
     u.push_back('\0');
-	
-	for (size_t i = 0; i < u.length(); ++i) {
-        cout << static_cast<int>(u[i]) << " ";
-    }
-    cout << endl;
-
-
-    for (size_t i = 0; i < z.length(); ++i) {
-        cout << static_cast<int>(z[i]) << " ";
-    }
-    cout << endl;
 
 
 if(z==u)
@@ -285,7 +274,38 @@ else{
 }
 
 void exercise_9(string s) {
-  // TODO: YOUR CODE HERE
+  int cont=0;
+	int h;
+	for(int n=0;x.size()>n;n++)
+	{
+		if(x[n]=='f')
+		{
+		cont=cont+1;
+		
+		}
+		
+		if (cont ==2)
+		{
+		h=n;	
+		}
+		
+		
+	}
+	
+	if(cont==0)
+	{
+		cout<<"-2"<<endl;
+
+	}
+	else if(cont ==1)
+	{
+		cout<<"-1"<<endl;
+	}
+	else if(cont>1)
+	
+	{
+		cout<<h-1<<endl;
+	}
 }
 
 int exercise_10(int a, int b) {
