@@ -144,7 +144,11 @@ while(n==n)
 			cout<<"   ";
 		}
 		
-		
+		else if(line==6)
+		{
+			
+		cout<<" "<<resp;	
+		}
 	    else if(resp>=1 && resp<10)
 		{
 			cout<<" "<<resp<<" ";
@@ -186,11 +190,20 @@ int exercise_6(int n) {
 
 void exercise_7(int n) {
   double res=1;
+  if (n==0)
+  {
+    res=0;
+  
+  }
+  else{
+
+  
 for(int cont=2;cont<=n;cont++)
 {
 	
 	res=res+((pow(-1,cont+1))/cont);
 	
+}
 }
 	cout<<res<<endl;
 }
