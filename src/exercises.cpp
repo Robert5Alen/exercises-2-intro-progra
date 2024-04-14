@@ -26,7 +26,12 @@ cout<<s1.size()<<endl;
 }
 
 void exercise_2(string s1) {
-  
+
+if(s1.size()==0){
+	
+	
+}
+else{
 
 cout<<"[";
 for(int n=0;n<s1.size();n++)
@@ -47,7 +52,7 @@ for(int n=0;n<s1.size();n++)
 }
 cout<<"]\n";
 
-
+}
 
 
 
