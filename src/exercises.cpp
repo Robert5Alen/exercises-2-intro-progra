@@ -179,21 +179,20 @@ if(resp>k)
 }
 
 int exercise_6(int n) {
-  int sum=0;
-	while(num>0)
-	{
-		
-		sum=sum+num%10;
-		num=num/10;
-	}
+ 
 	
-
-	
-  return sum;
+  return 0;
 }
 
 void exercise_7(int n) {
-  // TODO: YOUR CODE HERE
+  double res=1;
+for(int cont=2;cont<=n;cont++)
+{
+	
+	res=res+((pow(-1,cont+1))/cont);
+	
+}
+	cout<<res<<endl;
 }
 
 void exercise_8(string s) {
