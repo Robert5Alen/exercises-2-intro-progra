@@ -122,14 +122,52 @@ else
 	 x=x*cont;
 		
 	}
-	cout<<x;
+	cout<<x<<endl;
 	
 	}
   
 }
 
 void exercise_5(int n, int k) {
-  // TODO: YOUR CODE HERE
+  int resp=n;
+n=n-6;
+while(n+7>=1)
+{
+	
+	
+	for(int line=0;line<7 && n<=k;line++)
+	{
+		if (n<10 && n<resp)
+		{
+			
+			cout<<"   ";
+		}
+		
+		
+	    else if(n<10 && n>=resp)
+		{
+			cout<<" "<<n<<" ";
+		}
+		else
+		{
+		cout<<n<<" ";	
+		}
+		n++;
+	
+		
+		
+	}
+	
+	cout<<"\n";
+	
+if(n>k)
+{
+	break;
+}
+}
+	
+	
+	
 }
 
 int exercise_6(int n) {
