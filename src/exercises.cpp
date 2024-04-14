@@ -276,9 +276,9 @@ else{
 void exercise_9(string s) {
   int cont=0;
 	int h;
-	for(int n=0;x.size()>n;n++)
+	for(int n=0;s.size()>n;n++)
 	{
-		if(x[n]=='f')
+		if(s[n]=='f')
 		{
 		cont=cont+1;
 		
