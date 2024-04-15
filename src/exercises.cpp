@@ -348,7 +348,7 @@ void exercise_12() {
 x=n*x;
 
 res=1/x;
-cout<<"U"<<n<<" = "<<res<<"V"<<n<<" = 1"<<endl;
+cout<<"U"<<n<<" = "<<res<<" V"<<n<<" = 1"<<endl;
 
   }
 
