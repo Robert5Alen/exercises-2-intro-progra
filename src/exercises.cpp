@@ -339,11 +339,34 @@ cout<<"U"<<n<<" = "<<res<<endl;
 
 void exercise_12() {
   
+ long double x=1;
+  long double res;
+
+  
+  for(long double n =1;n<=10;n++)
+  {
+x=n*x;
+
+res=1/x;
+cout<<"U"<<n<<" = "<<res<<"V"<<n<<" = 1"<<endl;
+
+  }
+
+
 }
 
 long exercise_13(int n, int k) {
-  // TODO: YOUR CODE HERE
-  return 0;
+  
+long res=0;
+	for(int cont=1;n>=cont;cont++ )
+	{
+		
+		res=res+(pow(cont,k));
+		
+		
+	}
+	
+	return res;
 }
 
 string exercise_14(int n) {
